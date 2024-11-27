@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    line-height: 2;
+    background-color: maroon;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+h3 {
+    color: white;
+}
+h4 {
+    color: white;
+}
+p {
+    text-align: justify;
+    margin: 12px;
+    color: white;
+   
+}
+
+.sidebar {
+    width: 250px;
+    background-color: black;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    border-radius: 8px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+}
+.containerForm {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: white;
+    margin-left: 285px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px maroon;
+    border-bottom: solid 1px white;
+}
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid maroon;
+    padding: 0 10px;
+}
+.gender-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.gender-category {
+    margin: 15px 0;
+    color: white;
+}
+.gender-category label {
+    padding: 0 20px 0 5px;
+}
+.gender-category label,
+.gender-category input, 
+.form-submit-btn input {
+    cursor: pointer;
+}
+.form-submit-btn {
+    margin-top: 40px;
+}
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: maroon;
+}
+.form-submit-btn input:hover {
+    background: maroon;
+    color: white;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: white;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 13s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translate(0); }
+    100% { transform: translate(-100%); }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    padding: 10px 15px;
+}
+
+a:link {
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 45px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: maroon;
+}
+
+
+#more {
+    display: none;
+}
+button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    background-color: beige;
+    margin-top: 15px;
+    cursor: pointer;
+}
+div, span {
+    font-size: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px; 
+}
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 20px 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 150%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-left: 55px;
+    margin-right: 50px;
+}
+.dropbtn:hover {
+    background-color: black;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 55px;
+    margin-right: 50px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content p {
+    margin: 20px 0;
+    color: white;
+    background-color: black;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+.contact .content p {
+    font-weight: 300;
+    color: white;
+}
+.containerContact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+}
+.containerContact .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.containerContact .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.containerContact .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.containerContact .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.containerContact .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.contactForm h2 {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox  span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+.contactForm .inputBox  input:focus ~ span,
+.contactForm .inputBox  input:valid ~ span,
+.contactForm .inputBox  textarea:focus ~ span,
+.contactForm .inputBox  textarea:valid ~ span  
+{
+    color: white;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox  input[type="submit"] {
+    width: 100px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 0;
+    margin-top: 70px;
+    color: white;
+}
